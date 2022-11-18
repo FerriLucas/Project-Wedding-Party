@@ -1,0 +1,421 @@
+:root {
+    --primary: #da28bf;
+    --secondary: #95989A;
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    cursor: default;
+}
+
+/*  Header - Descricao do Evento   */
+.descricao-do-evento {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/primeira.png");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+/* DIV: contexto-do-evento */
+.contexto-do-evento h2, .data-do-evento /*, .local-do-evento*/ {
+    color: var(--primary);
+    font-weight: bold;
+}
+.contexto-do-evento h2 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+.sobre-o-evento {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.p-da-data {
+    margin-top: 2.5em;
+}
+.contexto-do-evento p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+/* DIV: form-inscricao */
+.form-inscricao {
+    background-color: rgba(150, 150, 150, 0.7);
+    padding: 2em;
+    max-width: 22%;
+    border-radius: 7px;
+}
+.form-inscricao p {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+.form-grupo label {
+    color: var(--secondary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+.form-grupo input, select {
+    padding: 6px 8px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+.form-inscricao input::placeholder {
+    color: var(--text-secondary);
+}
+.form-inscricao input:focus {
+    color: var(--primary);
+}
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    opacity: 0.8;
+}
+.btn:hover {
+    transition: 0.6s;
+    opacity: 1;
+}
+/* ^ Header - Descricao do Evento ^ */
+
+/*   Section 01 - Momentos   */
+.sec-01 {
+    box-shadow: 0 0 60px rgba(218, 40, 191, .50);
+}
+.sec-01 h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 600;
+}
+.momentos {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+.momento {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+.momento-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+.momento-01 {
+    background-image: url("../img/a1.png");
+}
+.momento-02 {
+    background-image: url("../img/a2.png");
+}
+.momento-03 {
+    background-image: url("../img/a3.png");
+}
+/* ^ Section 01 - Momentos ^ */
+
+/*   Section 02 - Local do Evento   */
+.sec-02 {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
+    position: sticky;
+
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/meio.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+.local {
+    display: flex;
+}
+.link-local {
+    font-size: 3.2em;
+    text-decoration: none;
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: var(--primary);
+}
+.link-local:hover {
+    transition: 0.8s;
+    color: rgba(150, 150, 150, 0.7);
+}
+.detalhes-do-local {
+    text-align: center;
+    font-size: 1.3em;
+}
+.nome-local {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.local, .sobre-o-local {
+    max-width: 30%;
+}
+.sobre-o-local h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.sobre-o-local p {
+    line-height: 1.5em;
+}
+/* ^ Section 02 - Local do Evento ^ */
+
+/*   Section 03 - Detalhes do Evento   */
+.sec-03 {
+    width: 80%;
+    margin: 0 auto;
+}
+.detalhes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+.detalhes img {
+    width: 50%;
+    border-radius: 10px;
+}
+.detalhes h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.pri-h {
+    text-align: center;
+    font-weight: 600;
+}
+.seg-h {
+    font-weight: 600;
+}
+.happy, .food {
+    width: 100%;
+}
+.food {
+    padding-left: 2em;
+}
+.food ul {
+    list-style-position: inside;
+}
+.food ul li {
+    margin-bottom: 0.4em;
+}
+.food ul li:last-child {
+    font-weight: bold;
+}
+/* ^ Section 03 - Detalhes do Evento ^ */
+
+
+/*   Section 04 - Confirma Presença   */
+.sec-04 {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 1);
+    position: sticky;
+
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/ultima.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+.sec-04 h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 600;
+}
+.sec-04 .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+/* ^ Section 04 - Confirma Presença ^ */
+
+/*   Footer - Direitos   */
+.final-a {
+    height: 150px;
+    text-align: center;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.final-a h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+.final-a p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+.final-a span {
+    font-weight: bold;
+}
+.final-b {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.direitos {
+    color: var(--secondary);
+}
+.link-direitos {
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    olor: var(--secondary);
+}
+.link-direitos:hover {
+    transition: 0.8s;
+    color: var(--primary);
+}
+/* ^ Footer - Direitos ^ */
+
+
+/*   Mobile   */
+@media (max-width: 450px) {
+    /*  Header - Descricao do Evento   */
+    .descricao-do-evento {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contexto-do-evento {
+        padding: 2em;
+    }
+    .contexto-do-evento h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .form-inscricao {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .btn {
+        opacity: 1;
+    }
+    /* ^ Header - Descricao do Evento ^ */
+
+    /*   Section 01 - Momentos   */
+    .momentos {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .momento {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+    /* ^ Section 01 - Momentos ^ */
+
+    /*   Section 02 - Local do Evento   */
+    .sec-02 {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+    .local {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .link-local {
+        margin: 0.3em 0;
+        color: var(--secondary);
+    }
+    .sobre-o-local {
+        order: 1;
+        max-width: 100%;
+    }
+    .sobre-o-local h3 {
+        margin-bottom: 0.4em;
+    }
+    .sobre-o-local p {
+        display: none;
+    }
+    /* ^ Section 02 - Local do Evento ^ */
+
+    /*   Section 03 - Detalhes do Evento   */
+    .detalhes {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        gap: 0;
+    }
+    .detalhes img {
+        width: 100%;
+        margin: 2em 0;
+    }
+    .detalhe-01 img {
+        display: none;
+    }
+    .happy {
+        padding: 0;
+    }
+    .detalhe-02 img {
+        order: 1;
+    }
+    .detalhe-02 .food {
+        order: 2;
+    }
+    .ul-fim {
+        margin-bottom: 3em;
+    }
+    /* ^ Section 03 - Detalhes do Evento ^ */
+
+    /*   Section 04 - Confirma Presença   */
+    .sec-04 .btn {
+        width: 60%;
+    }
+    /* ^ Section 04 - Confirma Presença ^ */
+
+    /*   Footer - Direitos   */
+    .final-a {
+        margin-top: 2em;
+    }
+    /* ^ Footer - Direitos ^ */
+}
+/* ^ Mobile ^ */
