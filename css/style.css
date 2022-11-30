@@ -55,12 +55,20 @@ body {
     padding: 2em;
     max-width: 22%;
     border-radius: 7px;
+    text-align: center;
+}
+.form-inscricao a {
+    text-decoration: none;
 }
 .form-inscricao p {
+    text-align: center;
     font-weight: bold;
     font-size: 1.5em;
     color: var(--text-secondary);
     margin-bottom: 1em;
+}
+.form-inscricao form label {
+    text-align: start;
 }
 .form-grupo {
     display: flex;
@@ -216,11 +224,15 @@ body {
     font-size: 2em;
     margin-bottom: 1em;
 }
+.detalhes ul {
+    text-align: center;
+}
 .pri-h {
     text-align: center;
     font-weight: 600;
 }
 .seg-h {
+    text-align: center;
     font-weight: 600;
 }
 .happy, .food {
@@ -331,6 +343,9 @@ body {
         max-width: 70%;
         margin-bottom: 2em;
     }
+    .form-inscricao a {
+        display: none;
+    }
 
     .btn {
         opacity: 1;
@@ -392,6 +407,12 @@ body {
     .detalhe-01 img {
         display: none;
     }
+    .detalhes ul {
+        text-align: start;
+    }
+    .seg-h {
+        text-align: start;
+    }
     .happy {
         padding: 0;
     }
@@ -417,5 +438,8 @@ body {
         margin-top: 2em;
     }
     /* ^ Footer - Direitos ^ */
+}
+@media (max-width: 1099px) {
+
 }
 /* ^ Mobile ^ */
