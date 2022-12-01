@@ -59,6 +59,11 @@ body {
 }
 .form-inscricao a {
     text-decoration: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 14px;
 }
 .form-inscricao p {
     text-align: center;
@@ -315,7 +320,7 @@ body {
     font-size: 1em;
     text-decoration: none;
     cursor: pointer;
-    olor: var(--secondary);
+    color: var(--secondary);
 }
 .link-direitos:hover {
     transition: 0.8s;
@@ -326,45 +331,42 @@ body {
 
 /*   Mobile   */
 @media (max-width: 450px) {
+
     /*  Header - Descricao do Evento   */
-    .descricao-do-evento {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .contexto-do-evento {
-        padding: 2em;
-    }
-    .contexto-do-evento h2 {
-        margin-bottom: 0.5em;
-    }
-
-    .form-inscricao {
-        max-width: 70%;
-        margin-bottom: 2em;
-    }
-    .form-inscricao a {
-        display: none;
-    }
-
     .btn {
         opacity: 1;
     }
     /* ^ Header - Descricao do Evento ^ */
 
-    /*   Section 01 - Momentos   */
-    .momentos {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        padding: 2em;
+    /*   Section 03 - Detalhes do Evento   */
+    .detalhes ul {
+        text-align: start;
     }
+    .seg-h {
+        text-align: start;
+    }
+    /* ^ Section 03 - Detalhes do Evento ^ */
 
-    .momento {
-        max-width: 100%;
-        margin-bottom: 2em;
+    /*   Section 04 - Confirma Presença   */
+    .sec-04 .btn {
+        width: 60%;
     }
-    /* ^ Section 01 - Momentos ^ */
+    /* ^ Section 04 - Confirma Presença ^ */
+
+    /*   Footer - Direitos   */
+    .final-a {
+        margin-top: 2em;
+    }
+    /* ^ Footer - Direitos ^ */
+}
+
+@media (max-width: 680px) {
+
+    /*  Header - Descricao do Evento   */
+    .form-inscricao a {
+        display: none;
+    }
+    /* ^ Header - Descricao do Evento ^ */
 
     /*   Section 02 - Local do Evento   */
     .sec-02 {
@@ -404,15 +406,6 @@ body {
         width: 100%;
         margin: 2em 0;
     }
-    .detalhe-01 img {
-        display: none;
-    }
-    .detalhes ul {
-        text-align: start;
-    }
-    .seg-h {
-        text-align: start;
-    }
     .happy {
         padding: 0;
     }
@@ -426,20 +419,49 @@ body {
         margin-bottom: 3em;
     }
     /* ^ Section 03 - Detalhes do Evento ^ */
-
-    /*   Section 04 - Confirma Presença   */
-    .sec-04 .btn {
-        width: 60%;
-    }
-    /* ^ Section 04 - Confirma Presença ^ */
-
-    /*   Footer - Direitos   */
-    .final-a {
-        margin-top: 2em;
-    }
-    /* ^ Footer - Direitos ^ */
 }
-@media (max-width: 1099px) {
 
+@media (max-width: 1100px) {
+
+    /*  Header - Descricao do Evento   */
+    .descricao-do-evento {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contexto-do-evento {
+        text-align: center;
+        padding: 2em;
+    }
+    .contexto-do-evento h2 {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    .form-inscricao {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+    /* ^ Header - Descricao do Evento ^ */
+
+    /*   Section 01 - Momentos   */
+    .momentos {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .momento {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+    /* ^ Section 01 - Momentos ^ */
+
+    /*   Section 03 - Detalhes do Evento   */
+    .detalhe-01 img {
+        display: none;
+    }
+    /* ^ Section 03 - Detalhes do Evento ^ */
 }
 /* ^ Mobile ^ */
